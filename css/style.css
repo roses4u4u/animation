@@ -1,0 +1,26 @@
+*{margin:0;padding:0;box-sizing: border-box;font-family:sans-serif}
+body{
+  background-color: wheat;
+  
+}
+@keyframes ani{
+  0%,100%{
+    background: url(../img/a.jpg);
+  }
+  25%{
+    background: url(../img/b.jpg);
+  }
+  50%{
+    background: url(../img/c.jpg);
+  }
+  75%{
+    background: url(../img/d.jpg);
+  }
+}
+.wrapper{
+  width:800px;height:600px;border:10px solid #fff;
+  animation:ani 12s ease-in-out infinite;
+  position:absolute;
+  left:50%;top:50%;
+  transform:translate(-50%,-50%);
+}
